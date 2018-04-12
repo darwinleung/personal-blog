@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://darwinleung.github.io/posts/2018-03-25-setting-up-this-blog/</loc>
+    <lastmod>2018-03-25T14:47:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://darwinleung.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://darwinleung.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://darwinleung.github.io/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://darwinleung.github.io/</loc>
+    <lastmod>2018-03-25T14:47:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://darwinleung.github.io/posts/</loc>
+    <lastmod>2018-03-25T14:47:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://darwinleung.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
