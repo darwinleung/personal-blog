@@ -114,10 +114,11 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/
 1. Create 2 repo: darwinleung.github.io and blog-test
 2. git clone to empty directory, copy content over
 3. rm -rf public
-4. git submodule add -b master https://darwinleung.github.io public
+4. git submodule add -b master https://github.com/darwinleung/darwinleung.github.io.git public
 5. deploy.sh
 
 
 
 ## workflow
 
+test 1.0
