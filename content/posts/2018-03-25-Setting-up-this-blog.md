@@ -107,7 +107,7 @@ PygmentsCodeFences = true
 PygmentsStyle = "native"
 ```
 
-## Hosting on Github
+## **Hosting on Github**
 
 Once everything look okay locally, the last step is to host it on Github pages. I follow the [guide](https://gohugo.io/hosting-and-deployment/hosting-on-github) from Hugo.
 
