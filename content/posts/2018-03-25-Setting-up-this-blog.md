@@ -10,6 +10,20 @@ categories: [ "programming" ]
 
 First, I follow the [quick start guide](https://gohugo.io/getting-started/quick-start/) to install and set up a hugo server locally.
 
+## **Adding content**
+
+Use `hugo new posts/my-first-post.md` or simply add a markdown file under the `content\posts` folder. Make sure the markdown files include the [front matter](https://gohugo.io/content-management/front-matter/), in a regular post page, it looks something like:
+
+```
+title: "Setting up this blog"
+date: 2018-03-25T14:47:00-04:00
+draft: false
+tags: [ "hugo" , "git" ]
+categories: [ "programming" ]
+```
+
+For a static page like "About" or "Contact", I only use title and draft.
+
 ## **Customize theme**
 
 ### **Picking theme**
@@ -38,8 +52,6 @@ First step is to modify config.toml to personalize your site. Set theme = "hyde-
     weight = 300
     url = "/contact/"
 ```
-
-
 
 ### **Background color**
 
@@ -125,6 +137,7 @@ Basic steps:
 
 It is simple to add new posts or make any updates to my blog site.
 
-1. Make changes within the local blog folder
+1. Make changes within the local blog folder, you can preview the changes locally by `hugo server -D`
 2. Push changes to github repo `personal-blog`
 3. Run deploy.sh
+
