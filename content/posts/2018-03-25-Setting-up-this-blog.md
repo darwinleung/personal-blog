@@ -2,6 +2,8 @@
 title: "Setting up this blog"
 date: 2018-03-25T14:47:00-04:00
 draft: false
+tags: [ "hugo" , "git" ]
+categories: [ "programming" ]
 ---
 
 ## **Hugo**
@@ -105,20 +107,24 @@ PygmentsCodeFences = true
 PygmentsStyle = "native"
 ```
 
-
-
 ## Hosting on Github
 
-https://gohugo.io/hosting-and-deployment/hosting-on-github/
+Once everything look okay locally, the last step is to host it on Github pages. I follow the [guide](https://gohugo.io/hosting-and-deployment/hosting-on-github) from Hugo.
 
-1. Create 2 repo: darwinleung.github.io and blog-test
-2. git clone to empty directory, copy content over
-3. rm -rf public
-4. git submodule add -b master https://github.com/darwinleung/darwinleung.github.io.git public
-5. deploy.sh
+Basic steps:
+
+1. Create 2 repo: `darwinleung.github.io` and `personal-blog`
+2. Add my local blog folder to the personal-blog github repo, more info [here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+3. Remove the public folder inside the blog folder: `rm -rf public`
+4. `git submodule add -b master https://github.com/darwinleung/darwinleung.github.io.git public`
+5. Run `hugo` inside blog folder to generate the `public` folder
+6. Run [deploy.sh](https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script) 
 
 
+## **Workflow**
 
-## workflow
+It is simple to add new posts or make any updates to my blog site.
 
-test 1.0
+1. Make changes within the local blog folder
+2. Push changes to github repo `personal-blog`
+3. Run deploy.sh
