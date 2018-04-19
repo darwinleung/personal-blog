@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "DL"
 theme = "hyde-hyde"
 # pygmentsUseClasses = true
-# PygmentsCodeFences = true
+PygmentsCodeFences = true
 # PygmentsStyle = "monokai"
 
 [taxonomies]
