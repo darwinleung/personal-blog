@@ -1,8 +1,8 @@
 ---
-title: "Setting up this blog"
+title: "Setting up this blog with Hugo and Hyde-hyde"
 date: 2018-03-25T14:47:00-04:00
 draft: false
-tags: [ "hugo" , "git" ]
+tags: [ "hugo" , "git", "hyde" , "hyde-hyde"]
 categories: [ "programming" ]
 ---
 
@@ -89,24 +89,43 @@ If you like them, just change the `themeColor` parameter as in the [hyde docs](h
 
 ###  **Font**
 
-We can also change the font size and family from the same `hyde.css`.
+We can also change the font size and family from `custom.css`. 
 
-From Global resets, I modify the font-family to:
+I modified the font-family and font-size to:
 
 ```css
-html {
-  font-family: Arial, Helvetica, sans-serif;
-    font-weight:300;
+html,
+body
+{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 ```
 
-I am happy with the font size for hyde-hyde, but you can change the font size by changing the font-size parameters.
+I used [cssfontstack.com](https://www.cssfontstack.com) to find a collection of web safe CSS font.
 
 ###  **Favicon**
 
 Favicon is the website icon on the browser tab and bookmark. 
 
 I used [realfavicongenerator](https://realfavicongenerator.net) to generate a favicon and put the extracted files in `/static/`. More info [here](http://www.enthuseandinspire.co.uk/blog/favicon/).
+
+Next, I tried to find the corresponding place hugo specifying the favicon location. It is in the `/theme/hyde-hyde/layouts/partials/header.html`
+
+Near the bottom, I added:
+
+```html
+    {{ "<!-- Icons -->" | safeHTML }}
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+```
+
+
 
 ### **Code syntax highlighting**
 
@@ -116,10 +135,12 @@ By theme default, the text is in white with black background color. There were s
 
 ```toml
 PygmentsCodeFences = true
-PygmentsStyle = "native"
+PygmentsStyle = "monokai"
 ```
 
-## **Hosting on Github**
+Update (04-18-2018): I switched to another highlighting style from `config.toml` `[param]` by adding `highlightjsstyle = "dark"`.
+
+##**Hosting on Github**
 
 Once everything look okay locally, the last step is to host it on Github pages. I follow the [guide](https://gohugo.io/hosting-and-deployment/hosting-on-github) from Hugo.
 

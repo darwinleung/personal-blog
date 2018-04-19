@@ -14,8 +14,8 @@ body
 
 .headshot
 {
-    width: 115px;
-    height: 115px;
+    width: 150px;
+    height: 150px;
 }
 
 .brand
@@ -71,7 +71,7 @@ code {
 .copyright, 
 .poweredby
 {
-    font-size: 13px !important;
+    font-size: 10px !important;
     font-weight: 300;
 }
 

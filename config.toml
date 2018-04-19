@@ -4,7 +4,7 @@ title = "DL"
 theme = "hyde-hyde"
 # pygmentsUseClasses = true
 # PygmentsCodeFences = true
-PygmentsStyle = "monokai"
+# PygmentsStyle = "monokai"
 
 [taxonomies]
   tag = "tags"
@@ -20,12 +20,12 @@ PygmentsStyle = "monokai"
     author = "Darwin"
     title = "title"
     description = "Darwin's personal blog"
-    copyright = "Built with Hugo and Hyde ©2018."
+    copyright = "Built with Hugo and Hyde-hyde ©2018."
     authorimage = "/img/DL_symbol.jpg"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     themeColor = "theme-base-0g" # for hyde theme
-    # highlightjsstyle = "github"
+    highlightjsstyle = "dark"
 
 ## Social Accounts
 [params.social]
