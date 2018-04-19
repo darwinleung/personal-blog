@@ -2,8 +2,9 @@ baseurl = "https://darwinleung.github.io/"
 languageCode = "en-us"
 title = "DL"
 theme = "hyde-hyde"
-PygmentsCodeFences = true
-PygmentsStyle = "native"
+# pygmentsUseClasses = true
+# PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 
 [taxonomies]
   tag = "tags"
