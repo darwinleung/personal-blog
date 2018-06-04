@@ -26,6 +26,7 @@ googleAnalytics = "UA-120240510-1"
     highlightjs = true
     themeColor = "theme-base-0g" # for hyde theme
     highlightjsstyle = "dark"
+    googleAnalytics = "UA-120240510-1"
 
 ## Social Accounts
 [params.social]
