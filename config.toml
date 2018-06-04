@@ -12,7 +12,7 @@ PygmentsCodeFences = true
 
 ## Hugo Built-in Features
 # disqusShortname = ""
-# googleAnalytics = ""
+googleAnalytics = "UA-120240510-1"
 # enableRobotsTXT = true
 
 ## Site Settings
