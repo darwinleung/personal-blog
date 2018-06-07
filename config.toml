@@ -6,14 +6,14 @@ theme = "hyde-hyde"
 PygmentsCodeFences = true
 # PygmentsStyle = "monokai"
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
 ## Hugo Built-in Features
 # disqusShortname = ""
 googleAnalytics = "UA-120240510-1"
 # enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 ## Site Settings
 [params]
