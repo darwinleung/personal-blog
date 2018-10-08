@@ -140,7 +140,7 @@ PygmentsStyle = "monokai"
 
 Update (04-18-2018): I switched to another highlighting style from `config.toml` `[param]` by adding `highlightjsstyle = "dark"`.
 
-##**Hosting on Github**
+## **Hosting on Github**
 
 Once everything look okay locally, the last step is to host it on Github pages. I follow the [guide](https://gohugo.io/hosting-and-deployment/hosting-on-github) from Hugo.
 
@@ -161,4 +161,7 @@ It is simple to add new posts or make any updates to my blog site.
 1. Make changes within the local blog folder, you can preview the changes locally by `hugo server -D`
 2. Push changes to github repo `personal-blog`
 3. Run deploy.sh
+
+
+
 
