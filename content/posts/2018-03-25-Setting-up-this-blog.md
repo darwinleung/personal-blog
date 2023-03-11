@@ -160,6 +160,9 @@ It is simple to add new posts or make any updates to my blog site.
 
 1. Make changes within the local blog folder, you can preview the changes locally by `hugo server -D`
 2. Push changes to github repo `personal-blog`
+   1. git add *
+   2. git commit -m "comment"
+   3. git push
 3. Run deploy.sh
 
 
